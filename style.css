@@ -1,65 +1,65 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
 
-.header
-{
-    display: flex;
-    width: 375px;
-    height: 48px;
-    padding: 14px 24px;
-    align-items: center;
-    justify-content: space-between;
+.header {
+  display: flex;
+  width: 375px;
+  height: 48px;
+  padding: 14px 24px;
+  align-items: center;
+  justify-content: space-between;
 }
-.header .My-logo
-{
-    font-family: 'Poppins', sans-serif;
-    font-weight: 700;
-    font-size: 18px;
-    color: #6070FF;
+
+.header .My-logo {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  color: #6070ff;
 }
-.header .logo-link
-{
-    text-decoration: none;
+
+.header .logo-link {
+  text-decoration: none;
 }
-.nav-rightside
-{
-    width: 18px;
-    height: 12px;
-    left: 3px;
-    top: 6px;
+
+.nav-rightside {
+  width: 18px;
+  height: 12px;
+  left: 3px;
+  top: 6px;
 }
-.myname
-{
-    font-family: 'Poppins', sans-serif;
-    font-weight: 700;
-    font-size: 18px;
-    color: #6070FF;
+
+.myname {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  color: #6070ff;
 }
-p
-{
-    color: #344563;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
+
+p {
+  color: #344563;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
 }
-section{ 
-    background-image: url("../images/bgimage.png");
-    background-repeat: no-repeat;
-    position: relative;
-    top: 80px;
-    flex-direction: column;
-    padding-left: 24px;
-    padding-right: 24px;
-} 
-.foot
-{
-    font-family: "poppins", sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 24px;
-    color: #7F8CFF;
+
+section {
+  background-image: url("../images/bgimage.png");
+  background-repeat: no-repeat;
+  position: relative;
+  top: 80px;
+  flex-direction: column;
+  padding-left: 24px;
+  padding-right: 24px;
 }
-.social-media-icon:hover
-{
-    opacity: .7;
+
+.foot {
+  font-family: "poppins", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #7f8cff;
+}
+
+.social-media-icon:hover {
+  opacity: 0.7;
 }
