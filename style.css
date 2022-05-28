@@ -129,7 +129,6 @@ p {
   position: absolute;
   width: 124px;
   height: 48px;
-  left: 0px;
   top: calc(50% - 48px / 2);
   border: 1px solid #6070ff;
   border-radius: 8px;
