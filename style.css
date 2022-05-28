@@ -76,3 +76,114 @@ p {
 .social-media-icon:hover {
   opacity: 0.7;
 }
+
+.extra {
+  font-style: "poppins";
+  font-weight: 600;
+  font-size: 13px;
+  color: #7a869a;
+}
+
+.language {
+  font-weight: 500;
+  font-size: 12px;
+  color: #6070ff;
+  letter-spacing: 0.003em;
+  margin: 0.5px;
+  border-radius: 6px;
+  border-style: none;
+  padding: 6px;
+}
+
+.canopy {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  color: #344563;
+}
+
+.submit {
+  width: 100px;
+  height: 24px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #396df2;
+}
+
+.bgimg {
+  width: 295px;
+  height: 220px;
+  border-radius: 8px;
+  top: 16px;
+  left: 16px;
+}
+
+.button {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px;
+  gap: 10px;
+  position: absolute;
+  width: 124px;
+  height: 48px;
+  left: 0px;
+  top: calc(50% - 48px / 2);
+  border: 1px solid #6070ff;
+  border-radius: 8px;
+}
+
+.headtext {
+  width: 295px;
+  height: 36px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+}
+
+.modal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 16px;
+  align-items: flex-start;
+  background-color: antiquewhite;
+  margin: 88px 24px 24px 24px;
+  border-radius: 16px;
+}
+
+.modal h1 {
+  font-weight: 700;
+  font-size: 32px;
+  color: #172b4d;
+  margin: 0%;
+}
+
+.modal p {
+  font-weight: 400;
+  font-size: 15px;
+  color: #344563;
+  margin: 0%;
+}
+.modal {
+  /* width: 100%; */
+  background-image: url("./images/snapshoot-portfolio2.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 80px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
