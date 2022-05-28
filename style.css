@@ -138,7 +138,7 @@ p {
 .headtext {
   width: 295px;
   height: 36px;
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
@@ -168,15 +168,4 @@ p {
   font-size: 15px;
   color: #344563;
   margin: 0%;
-}
-
-.modal {
-  /* width: 100%; */
-  background-image: url("./images/snapshoot-portfolio2.png");
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  padding-top: 80px;
-  padding-left: 24px;
-  padding-right: 24px;
 }
