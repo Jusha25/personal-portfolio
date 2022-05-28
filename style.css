@@ -56,7 +56,7 @@ p {
 }
 
 .foot {
-  font-family: "poppins", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
@@ -78,7 +78,7 @@ p {
 }
 
 .extra {
-  font-style: "poppins";
+  font-style: "Poppins";
   font-weight: 600;
   font-size: 13px;
   color: #7a869a;
@@ -96,7 +96,7 @@ p {
 }
 
 .canopy {
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 13px;
@@ -107,7 +107,7 @@ p {
 .submit {
   width: 100px;
   height: 24px;
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
@@ -169,6 +169,7 @@ p {
   color: #344563;
   margin: 0%;
 }
+
 .modal {
   /* width: 100%; */
   background-image: url("./images/snapshoot-portfolio2.png");
