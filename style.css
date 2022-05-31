@@ -86,6 +86,7 @@ section .myname {
   padding-right: 68px;
   margin-bottom: 0;
   margin-top: 100px;
+  color: #172b4d;
 }
 
 section .about {
@@ -122,6 +123,7 @@ section .icon-right {
 }
 
 .works section {
+  display: flex;
   margin-bottom: 70px;
   border-radius: 20px;
   border: 0.2rem solid #e5e5e5;
@@ -138,6 +140,7 @@ section .icon-right {
   font-size: 32px;
   margin-top: 10px;
   width: 200px;
+  color: #172b4d;
 }
 
 .works section img {
@@ -242,6 +245,7 @@ section .icon-right {
 }
 
 .about-myself {
+  display: flex;
   background-color: white;
   width: 370px;
   padding-top: 70px;
@@ -251,7 +255,17 @@ section .icon-right {
 }
 
 .about-myself h2 {
-  width: 100px;
+  width: 327px;
+  height: 150px;
+}
+.about-myself h2 {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  font-size: 40px;
+  font-family: "Poppins";
+  font-style: normal;
+  color: #172b4d;
 }
 
 .about-myself .languages {
