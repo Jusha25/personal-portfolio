@@ -1,78 +1,324 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+body {
+  border: 0;
+  margin: 0;
+  width: 375px;
+  font-family: "Roboto", sans-serif;
+  height: 5410px;
+}
+
+html {
+  background-color: #f3ecec;
+}
+
+img {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  position: fixed;
+  top: 0%;
+  z-index: 5;
+  box-shadow: 0.1rem 0.1rem rgba(245, 243, 243, 0.918);
+  background: #fff;
+}
 
 .header {
   display: flex;
+  width: 375px;
   height: 48px;
   padding: 14px 24px;
   align-items: center;
   justify-content: space-between;
 }
 
-.header .logo-link {
+.header .my-logo {
   font-family: "Poppins", sans-serif;
   font-weight: 700;
   font-size: 18px;
   color: #6070ff;
+}
+
+.header .logo-link {
   text-decoration: none;
 }
 
-.nav-rightside {
-  width: 18px;
-  height: 12px;
-  left: 3px;
-  top: 6px;
+.right-nav {
+  display: flex;
+  align-content: flex-end;
+  margin-right: 30px;
 }
 
-.myname {
+section {
+  position: relative;
+  top: 75px;
+  flex-direction: column;
+  padding-left: 24px;
+  padding-right: 24px;
   font-family: "Poppins", sans-serif;
+  background-image: url(images/header-shapes-mobile.png);
+  background-repeat: no-repeat;
+  background-position: 100px right;
+  background-size: auto 600px;
+  border-radius: 0% 0% 0% 10%;
+  padding-bottom: 50px;
+}
+
+header,
+.intro {
+  background-color: white;
+}
+
+.intro {
+  width: 375px;
+  padding-top: 50px;
+}
+
+section .myname {
   font-weight: 700;
   font-size: 40px;
-  line-height: 52px;
+  padding-right: 68px;
+  margin-bottom: 0;
+  margin-top: 100px;
   color: #172b4d;
 }
 
-p {
-  color: #344563;
-  font-family: "Poppins", sans-serif;
+section .about {
+  margin-top: 12px;
   font-weight: 400;
   font-size: 16px;
-  line-height: 24px;
-  padding-right: 24px;
+  color: #344563;
 }
 
-.headline {
-  /* width: 100%; */
-  background-image: url("./images/bgimage.png");
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  padding-top: 80px;
-  padding-left: 24px;
-  padding-right: 24px;
-}
-
-.name-span {
-  display: block;
-}
-
-.foot {
-  font-family: "poppins", sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
+section .social-media-icons {
+  margin-top: 12px;
   color: #7f8cff;
+  height: 24px;
+  margin-left: -7px;
 }
 
-.social-media-icon {
+section .social-media-links {
   display: flex;
-  padding-left: 0;
-}
-
-.social-media-icon li {
-  margin-right: 12px;
+  margin-top: 10px;
   list-style: none;
+  margin-left: -40px;
 }
 
-.social-media-icon:hover {
-  opacity: 0.7;
+section .icon-right {
+  margin-right: 20px;
+}
+
+.works {
+  background-image: none;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: minmax(150px, auto);
+  margin: 50px auto;
+}
+
+.works section {
+  display: flex;
+  margin-bottom: 70px;
+  border-radius: 20px;
+  border: 0.2rem solid #e5e5e5;
+  border-color: #e5e5e531;
+  padding: 16px;
+  background-color: white;
+  background-image: none;
+  margin-left: 3px;
+}
+
+.works section .section-title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  margin-top: 10px;
+  width: 200px;
+  color: #172b4d;
+}
+
+.works section img {
+  width: auto;
+  cursor: pointer;
+}
+
+.works section .section-about {
+  display: flex;
+  height: 32px;
+  width: 300px;
+  margin-top: 4px;
+  align-items: center;
+  padding: 8px auto;
+  gap: 12px;
+  font-family: "Poppins", sans-serif;
+}
+
+.works section .section-about .canopy {
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 16px;
+}
+
+.works section .section-about .back-end {
+  color: #7a869a;
+  height: 16px;
+}
+
+.works section .section-about .year {
+  color: #7a869a;
+}
+
+.works section .section-about a {
+  color: #344563;
+  font-weight: 600;
+}
+
+.works section p {
+  color: #344563;
+  font-weight: 400;
+}
+
+.works section ul {
+  display: flex;
+  list-style: none;
+  align-items: flex-start;
+  margin-left: -40px;
+  gap: 8px;
+  height: 24px;
+}
+
+.works section ul li {
+  background-color: #ebebff;
+  border-radius: 8px;
+  padding: 4px 12px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  color: #6070ff;
+}
+
+.about-myself button {
+  width: 120px;
+  height: 44px;
+  color: #6070ff;
+  background-color: white;
+  border-color: #6070ff;
+  border-radius: 10px;
+  border: 0.1rem solid;
+}
+
+.works section button {
+  width: 95px;
+  height: 44px;
+  color: #6070ff;
+  background-color: white;
+  border-color: #6070ff;
+  border-radius: 10px;
+  border: 0.1rem solid;
+}
+
+.about-myself button:hover {
+  background-color: #6070ff;
+  color: white;
+}
+
+.about-myself button:active {
+  background-color: #2230d2;
+  color: white;
+}
+
+.works section button:hover {
+  background-color: #6070ff;
+  color: white;
+}
+
+.works section button:active {
+  background-color: #2230d2;
+  color: white;
+}
+
+.about-myself {
+  display: flex;
+  background-color: white;
+  width: 370px;
+  padding-top: 70px;
+  background-image: none;
+  margin-top: 60px;
+  border-radius: 0% 10% 0% 0%;
+}
+
+.about-myself h2 {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  font-size: 40px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  color: #172b4d;
+  width: 327px;
+  height: 150px;
+}
+
+.about-myself .languages {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-left: -36px;
+}
+
+.about-myself .languages li {
+  display: flex;
+  gap: 12px;
+  padding: 9px 9px 9px 12px;
+  list-style: none;
+  background-color: #f7f7f9;
+  height: 66.72px;
+  align-items: center;
+}
+
+.about-myself .lang {
+  list-style: none;
+  margin-left: -33px;
+  width: 303px;
+}
+
+.about-myself .lang .frameworks,
+.skills {
+  box-shadow: 0.001rem 0.07rem #dfe1e6;
+  font-size: 20px;
+  font-weight: 500;
+  height: 72px;
+}
+
+.about-myself .lang .down-arrow {
+  display: flex;
+  align-items: center;
+  gap: 150px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.about-myself .lang li .languages .javascript,
+.html,
+.css {
+  border-radius: 8px;
+}
+
+.about-myself .lang .down-arrow a img {
+  width: 12px;
+  height: 8px;
+}
+
+.about-myself .lang li .frameworks,
+.skills {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
