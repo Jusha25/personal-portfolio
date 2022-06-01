@@ -143,6 +143,10 @@ section .icon-right {
   color: #172b4d;
 }
 
+.footer img {
+  margin: 38px 120px;
+}
+
 .works section img {
   width: auto;
   cursor: pointer;
@@ -409,6 +413,7 @@ form textarea {
   font-family: "Poppins", sans-serif;
   font-style: normal;
 }
+
 .form .btn {
   font-style: normal;
   font-weight: 500;
@@ -434,8 +439,4 @@ form .btn:hover {
 form .btn:active {
   background-color: #2230d2;
   color: white;
-}
-
-.footer img {
-  margin: 38px 120px;
 }
