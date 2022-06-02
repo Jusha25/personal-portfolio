@@ -62,7 +62,7 @@ section {
   padding-left: 24px;
   padding-right: 24px;
   font-family: "Poppins", sans-serif;
-  background-image: url(images/header-shapes-mobile.png);
+  background-image: url(images/bgimage.png);
   background-repeat: no-repeat;
   background-position: 100px right;
   background-size: auto 600px;
@@ -141,6 +141,10 @@ section .icon-right {
   margin-top: 10px;
   width: 200px;
   color: #172b4d;
+}
+
+.footer img {
+  margin: 38px 120px;
 }
 
 .works section img {
@@ -321,4 +325,118 @@ section .icon-right {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.footer {
+  background-color: #6070ff;
+  background-repeat: no-repeat;
+  top: -29px;
+  width: 375px;
+  padding-left: 24px;
+  padding-right: 24px;
+  border-radius: 80px 0 0 0;
+  height: 760px;
+}
+
+.footer h2 {
+  display: flex;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  margin-top: 103px;
+  padding-top: 103px;
+}
+
+.footer.declare p {
+  color: #ebebff;
+  font-weight: 400;
+  font-size: 20px;
+  width: 327px;
+  text-align: center;
+  margin-left: 24px;
+}
+
+.form .feilds {
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  padding: 15px 16px;
+  width: 327px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  color: #172b4d;
+  margin: 15px;
+}
+
+form textarea {
+  background: #fff;
+  border: 1px solid #cfd8dc;
+  border-radius: 8px;
+  min-width: 327px;
+  min-height: 170px;
+  padding: 15px 16px;
+  line-height: 24px;
+  font-size: 15px;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+}
+
+.form input {
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  padding: 15px 16px;
+  width: 327px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  color: #172b4d;
+  margin-bottom: 10px;
+}
+
+.form textarea::placeholder {
+  font-size: 15px;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+}
+
+.form .btn {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #6070ff;
+  width: 140px;
+  height: 48px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+}
+
+form .btn:hover {
+  background-color: #6070ff;
+  color: white;
+}
+
+form .btn:active {
+  background-color: #2230d2;
+  color: white;
 }
