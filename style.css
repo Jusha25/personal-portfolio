@@ -84,7 +84,7 @@ header,
 }
 
 .intro {
-  width: 100%px;
+  width: 100%;
 }
 
 .intro .myname {
@@ -469,12 +469,15 @@ form textarea {
   .header {
     padding: 0 9.86%;
   }
+
   .header .right-nav {
     display: none;
   }
+
   .right-links {
     display: initial;
   }
+
   .header .right-links ul {
     list-style: none;
     display: flex;
@@ -494,7 +497,6 @@ form textarea {
 
   .works .card button {
     transition: 0.4s linear;
-    transition: 0.4s linear;
   }
 
   .canopyitems,
@@ -512,6 +514,7 @@ form textarea {
     /* overflow: auto; */
     list-style-type: none;
   }
+
   .canopyitems-1 {
     margin-top: 40px;
   }
@@ -525,6 +528,7 @@ form textarea {
     padding-right: 18%;
     padding-bottom: 24.46%;
   }
+
   .works {
     display: grid;
     padding-left: 9.86%;
@@ -537,13 +541,16 @@ form textarea {
     column-gap: 3%;
     grid-template-columns: repeat(2, 1fr);
   }
+
   .works .cards .card-photo {
     width: 100%;
     object-fit: contain;
   }
+
   .works .card-reverse {
     order: -1;
   }
+
   .about-myself {
     display: grid;
     max-width: 100%;
@@ -575,6 +582,7 @@ form textarea {
   .about-myself .lang li .languages {
     height: 122px;
   }
+
   .about-myself .languages li {
     height: auto;
     display: flex;
