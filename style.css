@@ -246,9 +246,12 @@ section .icon-right {
   color: #7a869a;
   line-height: 16px;
   justify-content: space-between;
+
   /* overflow: auto; */
+
   list-style-type: none;
 }
+
 .canopyitems-1 {
   margin-top: 40px;
 }
@@ -511,7 +514,9 @@ form textarea {
     color: #7a869a;
     line-height: 16px;
     justify-content: space-between;
+
     /* overflow: auto; */
+
     list-style-type: none;
   }
 
