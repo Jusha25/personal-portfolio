@@ -1,12 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   border: 0;
   margin: 0;
-  width: 375px;
   font-family: "Roboto", sans-serif;
-  height: 5410px;
 }
 
 html {
@@ -27,12 +29,16 @@ header {
   z-index: 5;
   box-shadow: 0.1rem 0.1rem rgba(245, 243, 243, 0.918);
   background: #fff;
+  overflow: hidden;
+  background-color: #fff;
+  width: 100%;
+  height: 916px;
 }
 
 .header {
   display: flex;
-  width: 375px;
-  height: 48px;
+  width: 100%;
+  height: 90px;
   padding: 14px 24px;
   align-items: center;
   justify-content: space-between;
@@ -52,20 +58,22 @@ header {
 .right-nav {
   display: flex;
   align-content: flex-end;
-  margin-right: 30px;
+}
+
+.right-links {
+  display: none;
 }
 
 section {
+  width: 100%;
   position: relative;
-  top: 75px;
   flex-direction: column;
   padding-left: 24px;
   padding-right: 24px;
   font-family: "Poppins", sans-serif;
-  background-image: url(images/bgimage.png);
+  background-image: url(./images/Header-bg@2x.png);
   background-repeat: no-repeat;
-  background-position: 100px right;
-  background-size: auto 600px;
+  background-size: calc(100%);
   border-radius: 0% 0% 0% 10%;
   padding-bottom: 50px;
 }
@@ -76,17 +84,18 @@ header,
 }
 
 .intro {
-  width: 375px;
-  padding-top: 50px;
+  width: 100%;
 }
 
-section .myname {
+.intro .myname {
+  padding-top: 241px;
+}
+
+section .name {
   font-weight: 700;
   font-size: 40px;
-  padding-right: 68px;
+  padding-right: 168px;
   margin-bottom: 0;
-  margin-top: 100px;
-  color: #172b4d;
 }
 
 section .about {
@@ -100,7 +109,6 @@ section .social-media-icons {
   margin-top: 12px;
   color: #7f8cff;
   height: 24px;
-  margin-left: -7px;
 }
 
 section .social-media-links {
@@ -120,10 +128,11 @@ section .icon-right {
   grid-template-columns: 1fr;
   grid-auto-rows: minmax(150px, auto);
   margin: 50px auto;
+  width: 100%;
 }
 
 .works section {
-  display: flex;
+  /* display: flex; */
   margin-bottom: 70px;
   border-radius: 20px;
   border: 0.2rem solid #e5e5e5;
@@ -140,22 +149,31 @@ section .icon-right {
   font-size: 32px;
   margin-top: 10px;
   width: 200px;
-  color: #172b4d;
 }
+
+.works section .card {
+  width: 100%;
+  display: flex;
+  cursor: pointer;
+}
+
+/* .works section .card-photo {
+  width: 100%;
+} */
 
 .footer img {
   margin: 38px 120px;
 }
 
 .works section img {
-  width: auto;
+  width: 350px;
   cursor: pointer;
 }
 
 .works section .section-about {
   display: flex;
-  height: 32px;
-  width: 300px;
+  height: 40px;
+  width: 100%;
   margin-top: 4px;
   align-items: center;
   padding: 8px auto;
@@ -167,6 +185,10 @@ section .icon-right {
   font-size: 13px;
   font-weight: 600;
   line-height: 16px;
+}
+
+.works section .section-about .dot {
+  width: 10px;
 }
 
 .works section .section-about .back-end {
@@ -192,7 +214,7 @@ section .icon-right {
   display: flex;
   list-style: none;
   align-items: flex-start;
-  margin-left: -40px;
+  margin-left: -30px;
   gap: 8px;
   height: 24px;
 }
@@ -206,6 +228,32 @@ section .icon-right {
   font-weight: 500;
   font-size: 12px;
   color: #6070ff;
+}
+
+.works .section-title-1 {
+  order: -1;
+}
+
+.canopyitems,
+.canopyitems-1 {
+  display: inline-flex;
+  width: 226px;
+  height: 16px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  color: #7a869a;
+  line-height: 16px;
+  justify-content: space-between;
+
+  /* overflow: auto; */
+
+  list-style-type: none;
+}
+
+.canopyitems-1 {
+  margin-top: 40px;
 }
 
 .about-myself button {
@@ -249,9 +297,8 @@ section .icon-right {
 }
 
 .about-myself {
-  display: flex;
   background-color: white;
-  width: 370px;
+  width: 100%;
   padding-top: 70px;
   background-image: none;
   margin-top: 60px;
@@ -259,15 +306,7 @@ section .icon-right {
 }
 
 .about-myself h2 {
-  display: flex;
-  align-items: center;
-  font-weight: 700;
-  font-size: 40px;
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
-  color: #172b4d;
-  width: 327px;
-  height: 150px;
+  width: 100px;
 }
 
 .about-myself .languages {
@@ -304,7 +343,7 @@ section .icon-right {
 .about-myself .lang .down-arrow {
   display: flex;
   align-items: center;
-  gap: 150px;
+  justify-content: space-between;
   font-size: 20px;
   font-weight: 500;
 }
@@ -327,18 +366,17 @@ section .icon-right {
   justify-content: space-between;
 }
 
-.footer {
+.contact-form {
   background-color: #6070ff;
-  background-repeat: no-repeat;
   top: -29px;
-  width: 375px;
+  min-width: 375px;
   padding-left: 24px;
   padding-right: 24px;
   border-radius: 80px 0 0 0;
   height: 760px;
 }
 
-.footer h2 {
+.contact-form .footer h2 {
   display: flex;
   font-family: "Poppins", sans-serif;
   font-weight: 700;
@@ -346,34 +384,20 @@ section .icon-right {
   color: white;
   align-items: center;
   justify-content: center;
-  margin-top: 103px;
   padding-top: 103px;
 }
 
-.footer.declare p {
-  color: #ebebff;
+.contact-form .footer p {
+  color: white;
   font-weight: 400;
   font-size: 20px;
-  width: 327px;
   text-align: center;
-  margin-left: 24px;
 }
 
-.form .feilds {
-  border-radius: 8px;
-  border: none;
-  outline: none;
-  padding: 15px 16px;
-  width: 327px;
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 17px;
-  line-height: 20px;
+.contact-form .footer form {
   display: flex;
-  align-items: center;
-  color: #172b4d;
-  margin: 15px;
+  flex-direction: column;
+  gap: 15px;
 }
 
 form textarea {
@@ -395,7 +419,6 @@ form textarea {
   border: none;
   outline: none;
   padding: 15px 16px;
-  width: 327px;
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -404,7 +427,6 @@ form textarea {
   display: flex;
   align-items: center;
   color: #172b4d;
-  margin-bottom: 10px;
 }
 
 .form textarea::placeholder {
@@ -414,7 +436,7 @@ form textarea {
   font-style: normal;
 }
 
-.form .btn {
+.contact-form .btn {
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
@@ -431,12 +453,149 @@ form textarea {
   outline: none;
 }
 
-form .btn:hover {
+.contact-form .btn:hover {
   background-color: #6070ff;
   color: white;
 }
 
-form .btn:active {
+.contact-form .btn:active {
   background-color: #2230d2;
   color: white;
+}
+
+.contact-form .shape {
+  display: flex;
+  margin: 78px auto;
+}
+
+@media (min-width: 768px) {
+  .header {
+    padding: 0 9.86%;
+  }
+
+  .header .right-nav {
+    display: none;
+  }
+
+  .right-links {
+    display: initial;
+  }
+
+  .header .right-links ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-content: flex-end;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    color: #344563;
+    gap: 30px;
+  }
+
+  .header .my-logo:hover {
+    transform: rotate(360deg);
+    transition: 1s ease-in-out;
+  }
+
+  .works .card button {
+    transition: 0.4s linear;
+  }
+
+  .canopyitems,
+  .canopyitems-1 {
+    display: inline-flex;
+    width: 226px;
+    height: 16px;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    color: #7a869a;
+    line-height: 16px;
+    justify-content: space-between;
+
+    /* overflow: auto; */
+
+    list-style-type: none;
+  }
+
+  .canopyitems-1 {
+    margin-top: 40px;
+  }
+
+  .header .right-links ul li a {
+    color: #344563;
+  }
+
+  .intro {
+    padding-left: 18%;
+    padding-right: 18%;
+    padding-bottom: 24.46%;
+  }
+
+  .works {
+    display: grid;
+    padding-left: 9.86%;
+    padding-right: 9.86%;
+  }
+
+  .works .card {
+    display: grid;
+    max-width: 100%;
+    column-gap: 3%;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .works .cards .card-photo {
+    width: 100%;
+    object-fit: contain;
+  }
+
+  .works .card-reverse {
+    order: -1;
+  }
+
+  .about-myself {
+    display: grid;
+    max-width: 100%;
+    column-gap: 3%;
+    grid-template-columns: repeat(2, 1fr);
+    padding-left: 9.86%;
+    padding-right: 9.86%;
+  }
+
+  .contact-form {
+    padding: 0 30.27%;
+    width: 100%;
+    background-image: url(images/contact-form-background-shapes@2x.png);
+    background-repeat: no-repeat;
+    background-size: calc(100%);
+  }
+
+  .contact-form .shape {
+    display: none;
+  }
+
+  .about-myself .languages {
+    display: grid;
+    grid-template-columns: repeat(3, 122px);
+    grid-template-rows: 120px;
+    transform: rotate(360deg);
+  }
+
+  .about-myself .lang li .languages {
+    height: 122px;
+  }
+
+  .about-myself .languages li {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #contact-btn {
+    margin: auto;
+  }
 }
