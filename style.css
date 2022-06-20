@@ -148,8 +148,8 @@ section .icon-right {
 
 .works section .card {
   width: 100%;
-  /* display: flex; */
   cursor: pointer;
+  /* display: flex; */
 }
 
 .works section .card-photo {
@@ -171,7 +171,6 @@ section .icon-right {
   width: 300px;
   margin-top: 4px;
   align-items: center;
-  /* padding: 8px auto; */
   gap: 12px;
   font-family: "Poppins", sans-serif;
 }
