@@ -149,6 +149,7 @@ section .icon-right {
 .works section .card {
   width: 100%;
   cursor: pointer;
+
   /* display: flex; */
 }
 
