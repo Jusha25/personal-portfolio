@@ -29,16 +29,12 @@ header {
   z-index: 5;
   box-shadow: 0.1rem 0.1rem rgba(245, 243, 243, 0.918);
   background: #fff;
-  overflow: hidden;
-  background-color: #fff;
-  width: 100%;
-  height: 916px;
 }
 
 .header {
   display: flex;
-  width: 100%;
-  height: 90px;
+  width: 380px;
+  height: 48px;
   padding: 14px 24px;
   align-items: center;
   justify-content: space-between;
@@ -60,7 +56,7 @@ header {
   align-content: flex-end;
 }
 
-.right-links {
+.right-links1 {
   display: none;
 }
 
@@ -84,7 +80,7 @@ header,
 }
 
 .intro {
-  width: 100%;
+  min-width: 375px;
 }
 
 .intro .myname {
@@ -128,7 +124,6 @@ section .icon-right {
   grid-template-columns: 1fr;
   grid-auto-rows: minmax(150px, auto);
   margin: 50px auto;
-  width: 100%;
 }
 
 .works section {
@@ -153,30 +148,30 @@ section .icon-right {
 
 .works section .card {
   width: 100%;
-  display: flex;
+  /* display: flex; */
   cursor: pointer;
 }
 
-/* .works section .card-photo {
+.works section .card-photo {
   width: 100%;
-} */
+}
 
-.footer img {
+/* .footer img {
   margin: 38px 120px;
 }
 
 .works section img {
   width: 350px;
   cursor: pointer;
-}
+} */
 
 .works section .section-about {
   display: flex;
-  height: 40px;
-  width: 100%;
+  height: 32px;
+  width: 300px;
   margin-top: 4px;
   align-items: center;
-  padding: 8px auto;
+  /* padding: 8px auto; */
   gap: 12px;
   font-family: "Poppins", sans-serif;
 }
@@ -214,7 +209,7 @@ section .icon-right {
   display: flex;
   list-style: none;
   align-items: flex-start;
-  margin-left: -30px;
+  margin-left: -40px;
   gap: 8px;
   height: 24px;
 }
@@ -230,11 +225,11 @@ section .icon-right {
   color: #6070ff;
 }
 
-.works .section-title-1 {
+/* .works .section-title-1 {
   order: -1;
-}
+} */
 
-.canopyitems,
+/* .canopyitems,
 .canopyitems-1 {
   display: inline-flex;
   width: 226px;
@@ -247,14 +242,14 @@ section .icon-right {
   line-height: 16px;
   justify-content: space-between;
 
-  /* overflow: auto; */
+ overflow: auto;
 
   list-style-type: none;
-}
+} */
 
-.canopyitems-1 {
+/* .canopyitems-1 {
   margin-top: 40px;
-}
+} */
 
 .about-myself button {
   width: 120px;
@@ -264,6 +259,7 @@ section .icon-right {
   border-color: #6070ff;
   border-radius: 10px;
   border: 0.1rem solid;
+  transition: 0.5s;
 }
 
 .works section button {
@@ -298,7 +294,7 @@ section .icon-right {
 
 .about-myself {
   background-color: white;
-  width: 100%;
+  min-width: 375px;
   padding-top: 70px;
   background-image: none;
   margin-top: 60px;
@@ -448,9 +444,10 @@ form textarea {
   color: #6070ff;
   width: 140px;
   height: 48px;
-  border-radius: 8px;
+  transition: 0.5s;
+  /* border-radius: 8px;
   border: none;
-  outline: none;
+  outline: none; */
 }
 
 .contact-form .btn:hover {
@@ -502,7 +499,7 @@ form textarea {
     transition: 0.4s linear;
   }
 
-  .canopyitems,
+  /* .canopyitems,
   .canopyitems-1 {
     display: inline-flex;
     width: 226px;
@@ -515,14 +512,14 @@ form textarea {
     line-height: 16px;
     justify-content: space-between;
 
-    /* overflow: auto; */
+    overflow: auto; */
 
-    list-style-type: none;
+  /* list-style-type: none;
   }
 
   .canopyitems-1 {
     margin-top: 40px;
-  }
+  }  */
 
   .header .right-links ul li a {
     color: #344563;
@@ -597,5 +594,66 @@ form textarea {
 
   #contact-btn {
     margin: auto;
+  }
+
+  .menu {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(96, 112, 255, 0.8);
+    backdrop-filter: blur(4px);
+    height: 100vh;
+    animation: growDown 300ms ease-in-out forwards;
+    transform-origin: top center;
+  }
+
+  @keyframes growDown {
+    0% {
+      transform: rotateX(-90deg);
+    }
+
+    70% {
+      transform: rotateX(20deg);
+    }
+
+    100% {
+      transform: rotateX(0deg);
+    }
+  }
+
+  .menu.visible {
+    display: block;
+  }
+
+  .menu .menu-li {
+    list-style-type: none;
+    margin-right: 20%;
+    margin-bottom: 40px;
+    margin-top: 13%;
+  }
+
+  .menu .nav-link {
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 44px;
+  }
+
+  .menu .nav-link:hover {
+    color: #6070ff;
+    background-color: #fff;
+    font-size: 34px;
+  }
+
+  .menu .xicon {
+    display: flex;
+    align-self: flex-end;
+    margin-left: 86%;
+    margin-top: 7.5%;
   }
 }
