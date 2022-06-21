@@ -7,7 +7,6 @@ hamburger.addEventListener('click', () => {
 });
 
 document.querySelectorAll('.nav-link').foreach((n) => n.addEventListener('click', () => {
-    hamburger.classList.remove('active');
-    rightnav.classList.remove('active');
-  })
-);
+  hamburger.classList.remove('active');
+  rightnav.classList.remove('active');
+}));
