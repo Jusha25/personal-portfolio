@@ -46,12 +46,12 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 60px;
+  gap: 40px;
   position: fixed;
   left: -100%;
-  top: 70px;
+  top: 50px;
   flex-direction: column;
-  background-color: #5ac057;
+  background-color: #2f79da;
   width: 100%;
   text-align: center;
   transition: 0.3s;
@@ -100,9 +100,20 @@ li {
   background-color: black;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 500px) {
   .hamburger {
     display: block;
+  }
+
+  html,
+  body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  .right-nav {
+    display: flex;
+    width: 100%;
   }
 
   .hamburger.active .bar:nth-child(2) {
@@ -131,7 +142,7 @@ li {
 } */
 
 .menu-li {
-  margin: 5px 0;
+  margin: 10px 0;
 }
 
 .right-nav.active {
