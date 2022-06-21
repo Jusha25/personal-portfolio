@@ -47,6 +47,15 @@ a {
   justify-content: space-between;
   align-items: center;
   gap: 60px;
+  position: fixed;
+  left: -100%;
+  top: 70px;
+  gap: 0;
+  flex-direction: column;
+  background-color: #5ac057;
+  width: 400px;
+  text-align: center;
+  transition: 0.3s;
 }
 
 /* .header {
@@ -100,15 +109,17 @@ li {
   .hamburger.active .bar:nth-child(2) {
     opacity: 0;
   }
+
   .hamburger.active .bar:nth-child(1) {
     transform: translateY(8px) rotate(45deg);
   }
+
   .hamburger.active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
   }
 }
 
-.right-nav {
+/* .right-nav {
   position: fixed;
   left: -100%;
   top: 70px;
@@ -118,7 +129,7 @@ li {
   width: 400px;
   text-align: center;
   transition: 0.3s;
-}
+} */
 
 .menu-li {
   margin: 5px 0;
