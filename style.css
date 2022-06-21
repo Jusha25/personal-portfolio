@@ -50,7 +50,6 @@ a {
   position: fixed;
   left: -100%;
   top: 70px;
-  gap: 0;
   flex-direction: column;
   background-color: #5ac057;
   width: 400px;
@@ -215,7 +214,9 @@ section .icon-right {
 } */
 
 /* .works section { */
+
 /* display: flex; */
+
 /* margin-bottom: 70px;
   border-radius: 20px;
   border: 0.2rem solid #e5e5e5;
@@ -239,6 +240,7 @@ section .icon-right {
   cursor: pointer; */
 
 /* display: flex; */
+
 /* }
 
 .works section .card-photo {
