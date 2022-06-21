@@ -1,16 +1,14 @@
-const menuShow = document.querySelector(".right-nav");
-const xButton = document.querySelector(".xicon");
+const hamburger = document.querySelector(".hamburger");
+const rightnav = document.querySelector(".right-nav");
 
-menuShow.addEventListener("click", () => {
-  document.querySelector(".menu").classList.add("visible");
+hamburger.addEventListener("click", () => {
+  hamburger.classList.toggle("active");
+  rightnav.classList.toggle("active");
 });
 
-xButton.addEventListener("click", () => {
-  document.querySelector(".menu").classList.remove("visible");
-});
-
-document.querySelectorAll(".nav-link").forEach((n) => {
+document.querySelectorAll(".nav-link").foreach((n) =>
   n.addEventListener("click", () => {
-    document.querySelector(".menu").classList.remove("visible");
-  });
-});
+    hamburger.classList.remove("active");
+    rightnav.classList.remove("active");
+  })
+);
