@@ -647,10 +647,6 @@ textarea {
     transition: 1s ease-in-out;
   }
 
-  .logo-top:hover {
-    transform: rotate(360deg);
-  }
-
   .snapshoot img:hover {
     cursor: pointer;
     transition: 1s ease-in-out;
