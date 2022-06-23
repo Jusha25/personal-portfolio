@@ -157,6 +157,15 @@
     justify-content: space-between;
   }
 
+  #works {
+    text-align: center;
+    color: #172b4d;
+    font-size: 32px;
+    margin: auto auto; /* text-align: center can be used here but this was troubling the bottom border */
+    padding-bottom: 10px;
+    border-bottom: 1px solid #344563;
+  }
+
   .img-container-pu {
     background-color: #e5e5e5;
     height: 500px;
