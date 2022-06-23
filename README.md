@@ -1,29 +1,39 @@
 # Project Name:- personal-portfolio
 
-## Description the project.
+## Project Description:-
 
-This project is a moblie website for personal portfolio. Home page of this project indicates name of the person, introduction of the person and also have person's social media links.
+Portfolio project is my personal portfolio with my details and previous project works and includes contact me form. This project is completely responsive for mobile and desktop.
 
 ## Built With:-
 
 Major languages:- HTML, CSS
 Technologies:- VScode
 
-## Getting Started
+##Project Link:- https://jusha25.github.io/personal-portfolio/
 
-To view this project, download the repo from github and run on the local machine browser.
+##Getting Started:-
+
+To get a local copy up and running follow these simple example steps.
+
+##Visit And Open Files
+https://github.com/Jusha25/personal-portfolio
+
+##Download Repo
+run command:- git clone https://github.com/Jusha25/personal-portfolio.git
 
 ## Authors
 
 👤 Author1
 
 GitHub: https://github.com/Jusha25
-Twitter: @shailisharma
-LinkedIn: shailisharma
+Twitter: @shailisharma25
+LinkedIn: https://www.linkedin.com/in/shaili-sharma-249872194/
 
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
+
+Feel free to check the https://github.com/Jusha25/personal-portfolio/issues.
 
 ## Show your support
 
@@ -32,3 +42,6 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
 
 Thank you Microverse for giving me this opportunity to build this project.
+
+##License
+This project is MIT licensed.
