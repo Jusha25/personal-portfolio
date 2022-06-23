@@ -4,6 +4,8 @@
 
 This project is a moblie website for personal portfolio. Home page of this project indicates name of the person, introduction of the person and also have person's social media links.
 
+## Project Link:- https://jusha25.github.io/personal-portfolio/
+
 ## Built With:-
 
 Major languages:- HTML, CSS
