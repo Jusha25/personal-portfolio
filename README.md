@@ -4,6 +4,8 @@
 
 Portfolio project is my personal portfolio with my details and previous project works and includes contact me form. This project is completely responsive for mobile and desktop.
 
+## Project Link:- https://jusha25.github.io/personal-portfolio/
+
 ## Built With:-
 
 Major languages:- HTML, CSS
