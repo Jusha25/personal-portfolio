@@ -1,24 +1,34 @@
-const button = document.querySelector('.btn-open');
-const button2 = document.querySelector('.btn-close');
-const menuItems = document.querySelectorAll('.menu-item2');
-
-function display() {
-  const menuContainer = document.querySelector('.mobile-menu-container');
-  menuContainer.style.display = 'block';
-  const buttonContainer = document.querySelector('.btn-container-open');
-  buttonContainer.style.display = 'none';
+const toggleMenu = document.querySelector('.toggle-menu');
+const closeBtn = document.querySelector('#close-btn');
+const menuItems = document.querySelectorAll('.menu-item');
+// for-top-nav
+function openNav() {
+  document.querySelector('.mobile-menu').classList.add('active');
+  toggleMenu.classList.add('invisible');
+  document.body.style.overflow = 'hidden';
 }
 
-function display2() {
-  const menuContainer = document.querySelector('.mobile-menu-container');
-  menuContainer.style.display = 'none';
-  const buttonContainer = document.querySelector('.btn-container-open');
-  buttonContainer.style.display = 'block';
+toggleMenu.addEventListener('click', openNav);
+
+function closeNav() {
+  document.querySelector('.mobile-menu').classList.remove('active');
+  toggleMenu.classList.remove('invisible');
+  document.body.style.overflow = 'auto';
 }
 
-button.addEventListener('click', display);
-button2.addEventListener('click', display2);
+closeBtn.addEventListener('click', closeNav);
 
 menuItems.forEach((item) => {
-  item.addEventListener('click', display2);
+  item.addEventListener('click', closeNav);
+});
+
+// for scrolling effect //
+document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+
+    document.querySelector(this.getAttribute('href')).scrollIntoView({
+      behavior: 'smooth',
+    });
+  });
 });
