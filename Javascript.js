@@ -49,7 +49,7 @@ window.addEventListener("scroll", () => {
     }
   });
   navLi.forEach((list) => {
-    list.classList.remove("active");
+    list.classList remove("active");
     if (list.classList.contains(currentSection)) {
       list.classList.add("active");
     }
