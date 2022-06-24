@@ -768,7 +768,7 @@ button:active {
 }
 
 .popup-close-btn:active,
-.popup-close-btn:hover { 
+.popup-close-btn:hover {
   background: #ecedefd5;
   border-radius: 50%;
 }
