@@ -1,7 +1,7 @@
 * {
-  font-family: "Poppins", sans-serif;
   margin: 0;
   padding: 0;
+  font-family: "Poppins", sans-serif;
 }
 
 body {
@@ -701,7 +701,7 @@ input:focus {
   /* contact us */
   footer {
     border-top-left-radius: 160px;
-    background: #6070ff url(./images/contct-form-backgrd-sha-dsktop.png);
+    background: #6070ff url(./images/contactform-background-shape-desktop.png);
     background-repeat: no-repeat;
     background-position: center;
   }
