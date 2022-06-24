@@ -17,7 +17,7 @@ To view this project, download the repo from github and run on the local machine
 
 ## Authors
 
-👤 Author1
+👤 Author
 
 GitHub: https://github.com/Jusha25
 Twitter: @shailisharma
