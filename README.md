@@ -17,7 +17,7 @@ Technologies:- VScode
 
 To get a local copy up and running, follow the steps in Setup below.
 
-### Setup
+## Setup
 
 If you installed git you can clone the code to your machine, or download a ZIP of all the files directly.
 
@@ -32,12 +32,14 @@ git clone https://github.com/Jusha25/personal-portfolio.git
 
 - With the files open in Visual Studio Code, press the **Go Live** button at the bottom of the window to launch the files with [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer).
 
-##Visit And Open Files
+## Visit And Open Files
 https://github.com/Jusha25/personal-portfolio
 
 ## Authors
 
 👤 Author1
+
+Shaili Sharma
 
 GitHub: https://github.com/Jusha25
 Twitter: @shailisharma25
