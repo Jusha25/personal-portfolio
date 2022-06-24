@@ -1,7 +1,7 @@
 * {
-  font-family: "Poppins", sans-serif;
   margin: 0;
   padding: 0;
+  font-family: "Poppins", sans-serif;
 }
 
 body {
@@ -431,7 +431,7 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
+  height: 90vh;
 }
 
 .contact-me {
@@ -448,33 +448,14 @@ footer {
   margin-bottom: 60px;
 }
 
-.errorMsg {
-  color: #ff3860;
-}
-
-.input-control {
-  width: 100%;
-}
-
 input {
   font-size: 17px;
   color: #172b4d;
   padding: 15px 16px;
   width: -webkit-fill-available;
+  margin-bottom: 20px;
   border-radius: 8px;
   border: 1px solid #cfd8dc;
-}
-
-input:focus {
-  outline: 0;
-}
-
-.input-control.success input {
-  border: 3px solid #09c372;
-}
-
-.input-control.error input {
-  border: 3px solid #ff3860;
 }
 
 ::placeholder {
@@ -488,6 +469,7 @@ input:focus {
   color: #172b4d;
   border-radius: 8px;
   padding: 8px;
+  margin-bottom: 20px;
 }
 
 .contact-btn {
@@ -701,7 +683,7 @@ input:focus {
   /* contact us */
   footer {
     border-top-left-radius: 160px;
-    background: #6070ff url(./images/contct-form-backgrd-sha-dsktop.png);
+    background: #6070ff url(./images/contactform-background-shape-desktop.png);
     background-repeat: no-repeat;
     background-position: center;
   }

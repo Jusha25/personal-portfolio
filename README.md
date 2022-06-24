@@ -37,7 +37,7 @@ https://github.com/Jusha25/personal-portfolio
 
 ## Authors
 
-👤 Author1
+👤 Author
 
 Shaili Sharma
 
