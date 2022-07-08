@@ -18,26 +18,26 @@
   <body>
     <header>
       <nav>
-        <h1 class="logo">
-          <a href="#">LOGO</a>
+        <h1 class="mylogo">
+          <a href="#">MYLOGO</a>
         </h1>
-        <ul class="menu">
-          <li class="project-section">
+        <ul class="topmenu">
+          <li class="rightmenu">
             <a href="#project-section">Portfolio</a>
           </li>
-          <li class="about-me"><a href="#about-me">About</a></li>
-          <li class="contact"><a href="#form-container">Contact</a></li>
+          <li class="aboutme"><a href="#about-me">About</a></li>
+          <li class="contactform"><a href="#form-container">Contact</a></li>
         </ul>
 
-        <div class="toggle-menu">
+        <div class="hamburger">
           <a href="#"><img src="./images/rightunion.png" alt="menu" /></a>
         </div>
-        <div class="mobile-menu">
+        <div class="crossbtnmenu">
           <img src="./images/XIcon.png" alt="close-icon" id="close-btn" />
-          <ul class="menu-items">
-            <li class="menu-item"><a href="#project-section">Portfolio</a></li>
-            <li class="menu-item"><a href="#about-me">About</a></li>
-            <li class="menu-item"><a href="#form-container">Contact</a></li>
+          <ul class="menuitemlist">
+            <li class="menuitems"><a href="#project-section">Portfolio</a></li>
+            <li class="menuitems"><a href="#about-me">About</a></li>
+            <li class="menuitems"><a href="#form-container">Contact</a></li>
           </ul>
         </div>
       </nav>
@@ -57,23 +57,23 @@
           me.
         </p>
 
-        <div class="social-handles">
+        <div class="social-icons-links">
           <p>Let's Connect</p>
           <ul class="social-icons">
-            <li class="github">
+            <li class="githublink">
               <a href="#"><img src="./images/cat.png" alt="github-icon" /></a>
             </li>
-            <li class="linkedin">
+            <li class="linkedinlink">
               <a href="#"
                 ><img src="./images/linkedIn.png" alt="linkedin-icon"
               /></a>
             </li>
-            <li class="twitter">
+            <li class="twitterlink">
               <a href="#"
                 ><img src="./images/twitter.png" alt="twitter-icon"
               /></a>
             </li>
-            <li class="instagram">
+            <li class="instagramlink">
               <a href="#"><img src="./images/M.png" alt="instagram-icon" /></a>
             </li>
           </ul>
@@ -82,16 +82,16 @@
     </section>
 
     <section id="project-section" class="page-section">
-      <h3 id="works">Recent Works</h3>
+      <h3 id="works">PROJECTS</h3>
       <div class="" id="overlay"></div>
-      <div class="pop-up-window">
+      <div class="popupwindow">
         <!--Popup details-->
       </div>
     </section>
     <!--about-me section-->
     <section id="about-me" class="page-section">
-      <div class="about-content">
-        <h2 class="headline">About Me!<br /></h2>
+      <div class="aboutsectiondetail">
+        <h2 class="head">About Me!<br /></h2>
 
         <p class="description">
           I'm a software developer! I can help you build a product , feature or
@@ -100,39 +100,39 @@
           me.
         </p>
 
-        <div class="social-handles">
+        <div class="social-icons-links">
           <p>Let's Connect</p>
           <ul class="social-icons">
-            <li class="github">
+            <li class="githublink">
               <a href="#"><img src="./images/cat.png" alt="github-icon" /></a>
             </li>
-            <li class="linkedin">
+            <li class="linkedinlink">
               <a href="#"
                 ><img src="./images/linkedIn.png" alt="linkedin-icon"
               /></a>
             </li>
-            <li class="twitter">
+            <li class="twitterlink">
               <a href="#"
                 ><img src="./images/twitter.png" alt="twitter-icon"
               /></a>
             </li>
-            <li class="instagram">
+            <li class="instagramlink">
               <a href="#"><img src="./images/M.png" alt="instagram-icon" /></a>
             </li>
           </ul>
         </div>
-        <button type="button" class="resume-btn">Get my resume</button>
+        <button type="button" class="resumebtn">Get my resume</button>
       </div>
-      <div class="skills-info">
+      <div class="technology">
         <ul class="languages">
-          <li class="skill-type">
+          <li class="language-type">
             <h3>Languages</h3>
             <a href="#"
               ><img src="./images/dropdownarrow.png" alt="down-arrow"
             /></a>
           </li>
         </ul>
-        <ul class="lang-skill">
+        <ul class="skill-types">
           <li>
             <a
               href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
@@ -163,7 +163,7 @@
         </ul>
 
         <ul class="frameworks">
-          <li class="skill-type">
+          <li class="language-type">
             <h3>Frameworks</h3>
             <a href="#"
               ><img src="./images/dropdownarrow.png" alt="right-arrow"
@@ -171,7 +171,7 @@
           </li>
         </ul>
         <ul class="languages">
-          <li class="skill-type">
+          <li class="language-type">
             <h3>Skills</h3>
             <a href="#"
               ><img src="./images/dropdownarrow.png" alt="right-arrow"
@@ -184,37 +184,37 @@
       <form action="https://formspree.io/f/mqknnjwr" method="post">
         <div id="form-container">
           <h4 class="contact-me">Contact me</h4>
-          <p class="contact-details">
+          <p class="contact-info">
             If you have an application you are interested in developing, a
             feature that you need built or a project that needs coding. I'd love
             to help with it
           </p>
-          <div class="input-control">
+          <div class="inputdata">
             <input
               type="text"
               name="username"
               id="name"
               placeholder="Your name"
             />
-            <div class="errorMsg"></div>
+            <div class="errormessage"></div>
           </div>
-          <div class="input-control">
+          <div class="inputdata">
             <input
               type="email"
               name="email"
               id="email"
               placeholder="Your email id"
             />
-            <div class="errorMsg"></div>
+            <div class="errormessage"></div>
           </div>
-          <div class="input-control">
+          <div class="inputdata">
             <textarea
               name="message"
               id="message"
               placeholder="Type your message"
               rows="8"
             ></textarea>
-            <div class="errorMsg"></div>
+            <div class="errormessage"></div>
           </div>
           <button type="submit" class="contact-btn">Get in touch</button>
         </div>

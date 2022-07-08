@@ -1,24 +1,24 @@
-const toggleMenu = document.querySelector('.toggle-menu');
+const hamburgerMenu = document.querySelector('.hamburger');
 const closeBtn = document.querySelector('#close-btn');
-const menuItems = document.querySelectorAll('.menu-item');
+const menuItemList = document.querySelectorAll('.menuitems');
 // for-top-nav
 function openNav() {
-  document.querySelector('.mobile-menu').classList.add('active');
-  toggleMenu.classList.add('invisible');
+  document.querySelector('.crossbtnmenu').classList.add('active');
+  hamburgerMenu.classList.add('invisible');
   document.body.style.overflow = 'hidden';
 }
 
-toggleMenu.addEventListener('click', openNav);
+hamburgerMenu.addEventListener('click', openNav);
 
 function closeNav() {
-  document.querySelector('.mobile-menu').classList.remove('active');
-  toggleMenu.classList.remove('invisible');
+  document.querySelector('.crossbtnmenu').classList.remove('active');
+  hamburgerMenu.classList.remove('invisible');
   document.body.style.overflow = 'auto';
 }
 
 closeBtn.addEventListener('click', closeNav);
 
-menuItems.forEach((item) => {
+menuItemList.forEach((item) => {
   item.addEventListener('click', closeNav);
 });
 
@@ -90,12 +90,12 @@ function addProjects(n) {
 
   projectSection.innerHTML += `
 <div class="project">
-<img src=${image} alt="Screenshot-of-*project-name*">
-<section class="project-body">
-    <h3 class="project-name">
+<img src=${image} alt="project-name">
+<section class="card">
+    <h3 class="card-name">
         ${name}
     </h3>
-    <div class="developer-info">
+    <div class="developer-detail">
         <h4 class="developer-name">
             ${devInfo}
         </h4>
@@ -104,10 +104,10 @@ function addProjects(n) {
             <li>● 2022</li>
         </ul>
     </div>
-    <p class="project-description">
+    <p class="card-description">
         ${description}
     </p>
-    <ul class="languages-used">
+    <ul class="language-skill">
         <li class="language"> ${languages[0]}</li>
         <li class="language">${languages[1]}</li>
         <li class="language">${languages[2]}</li>
@@ -130,7 +130,7 @@ const seeProjectBtn2 = document.querySelector('.project1-link'); // get-project 
 const seeProjectBtn3 = document.querySelector('.project2-link'); // get-project btns
 const seeProjectBtn4 = document.querySelector('.project3-link'); // get-project btns
 const overlay = document.querySelector('#overlay'); // get overlay
-const container = document.querySelector('.pop-up-window'); // get the popup-window
+const container = document.querySelector('.popupwindow'); // get the popup-window
 
 // open-popup function
 function openPopup(index) {
@@ -147,12 +147,12 @@ function openPopup(index) {
 
   // fill the popup container with html
   container.innerHTML = `
-  <div class="pop-up-header">
-  <a class="popup-close-btn">&times;</a>
-  <h3 class="project-name">
+  <div class="popuphead">
+  <a class="popupclosebtn">&times;</a>
+  <h3 class="card-name">
     ${name}
   </h3>
-  <div class="developer-info">
+  <div class="developer-detail">
     <h4 class="developer-name">
         ${devInfo}
     </h4>
@@ -162,16 +162,16 @@ function openPopup(index) {
     </ul>
   </div>
 </div>
-<div class="pop-up-body">
+<div class="popupcontent">
   <div class="images">
-  <img src=${image} alt="Screenshot-of-*project-name*" class="big-img">
+  <img src=${image} alt="project-name" class="big-img">
   </div>
-  <div class="about-project left">
-  <p class="project-description">
+  <div class="about-card left">
+  <p class="card-description">
    ${description}  
   </p>
   <div class="right">
-  <ul class="languages-used">
+  <ul class="language-skill">
       <li class="language">${languages[0]}</li>
       <li class="language">${languages[1]}</li>
       <li class="language">${languages[2]}</li>
@@ -196,7 +196,7 @@ function openPopup(index) {
   document.body.style.overflow = 'hidden';
 
   // close-popup function
-  const popupCloseBtn = document.querySelector('.popup-close-btn'); // get the close btn
+  const popupCloseBtn = document.querySelector('.popupclosebtn'); // get the close btn
   popupCloseBtn.addEventListener('click', () => {
     // remove active from class
     container.classList.remove('active');
@@ -237,7 +237,7 @@ const message = document.getElementById('message'); // get the message
 // for setting the error message
 const setError = (element, message) => {
   const inputControl = element.parentElement;
-  const errorDisplay = inputControl.querySelector('.errorMsg');
+  const errorDisplay = inputControl.querySelector('.errormessage');
 
   errorDisplay.innerText = message;
   inputControl.classList.add('error');
@@ -247,7 +247,7 @@ const setError = (element, message) => {
 // for setting the the success message
 const setSuccess = (element) => {
   const inputControl = element.parentElement;
-  const errorDisplay = inputControl.querySelector('.errorMsg');
+  const errorDisplay = inputControl.querySelector('.errormessage');
 
   errorDisplay.innerText = '';
   inputControl.classList.add('success');
